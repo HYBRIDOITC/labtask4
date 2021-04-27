@@ -9,11 +9,13 @@ private :
 };
 
 Sale::Sale () {
-
+	taxRate = 0.0;
+  	itemCost = 0.0;
 }
 
 Sale::Sale (double cost, double rate) {
-
+    taxRate = rate;
+    itemCost = cost;
 }
 
 int main () {
