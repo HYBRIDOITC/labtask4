@@ -3,7 +3,9 @@
 using namespace std;
 
 class Sale {
-
+private :
+		double taxRate;
+		double itemCost;
 };
 
 Sale::Sale () {
