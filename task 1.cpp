@@ -3,9 +3,15 @@
 using namespace std;
 
 class Sale {
-private :
+	private :
 		double taxRate;
 		double itemCost;
+	public:
+  	Sale();
+  	Sale(double,double);
+    double getTax() {
+		return taxRate*itemCost;
+	}
 };
 
 Sale::Sale () {
@@ -19,6 +25,8 @@ Sale::Sale (double cost, double rate) {
 }
 
 int main () {
-  
+  Sale sale2();
+  Sale sale1 (3.0,4.0);
+  cout << "Tax 1 Must be 12: " << sale1.getTax()<<endl;
   return 0;
 }
